@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgbtn_avatar"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"></ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgbtn_avatar"
+        android:text="Name: "
+        android:layout_marginTop="32dp"
+        android:id="@+id/tv_name">
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_showname"
+        android:text="Phone: "
+        android:layout_marginTop="16dp"
+        android:id="@+id/tv_phone">
+    </TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_below="@+id/imgbtn_avatar"
+        android:layout_toRightOf="@+id/tv_name"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="16dp"
+        android:background ="@null"
+        android:enabled="false"
+        android:id="@+id/edt_showname"
+        android:layout_marginRight="16dp"
+        android:textSize="15dp"></EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:background="@null"
+        android:id="@+id/edt_showphone"
+        android:enabled="false"
+        android:layout_below="@+id/edt_showname"
+        android:layout_toRightOf="@+id/tv_phone"
+        android:layout_margin="16dp"
+        android:textSize="15dp"></EditText>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/delete_black"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/imgbtn_delete"
+        android:background="#FFFFFF">
+    </ImageButton>
+
+    <Button
+        android:id="@+id/bt_canceldetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/transparent"
+        android:text="Cancel" />
+
+    <Button
+        android:id="@+id/bt_save"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:backgroundTint="@android:color/transparent"
+        android:enabled="false"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_edit"
+        android:layout_alignParentBottom="true"
+        android:src="@mipmap/ic_edit"
+        android:background="@android:color/transparent"
+        android:layout_centerInParent="true"></ImageButton>
+
+</RelativeLayout>
